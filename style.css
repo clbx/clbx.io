@@ -1,0 +1,16 @@
+.keepmiddle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+@font-face {
+    font-family: beef;
+    src: url(beef.ttf);
+}
+body {
+  font-family: 'beef';
+  line-height: 150%;
+}
