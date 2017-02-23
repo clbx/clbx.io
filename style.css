@@ -14,3 +14,8 @@ body {
   font-family: 'beef';
   line-height: 150%;
 }
+
+#footer {
+    position:fixed;
+    bottom:0;
+}
