@@ -43,7 +43,7 @@ function Paddle(x, y, width, height) {
 }
 
 Paddle.prototype.render = function () {
-    context.fillStyle = "#9d6c00";
+    context.fillStyle = "#3c3c4a";
     context.fillRect(this.x, this.y, this.width, this.height);
 };
 
