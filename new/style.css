@@ -1,0 +1,9 @@
+@font-face {
+    font-family: beef;
+    src: url(new/beef.ttf);
+}
+body {
+    font-family: beef;
+    line-height: 150%;
+    background-color: #212121;
+}
