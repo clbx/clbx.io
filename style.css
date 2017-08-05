@@ -20,4 +20,24 @@ body {
     bottom:0;
 }
 
+.center{
+    text-align: center;
+    margin-top:20%;
+}
+
+.title{
+    color:#808088;
+}
+.subtitle{
+    color:#3c3c4a;
+}
+.icons{
+    font-size: 45px;
+}
+
+.iconheader{
+    text-align: right;
+    margin: 10px;
+    font-size: 30px;
+}
 /*dsfasdf*/
