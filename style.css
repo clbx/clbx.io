@@ -1,10 +1,10 @@
 .keepmiddle {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-30%);
+    -webkit-transform: translateX(-50%) translateY(-30%);
+    transform: translateX(-50%) translateY(-30%);
 }
 @font-face {
     font-family: beef;
