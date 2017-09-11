@@ -40,4 +40,22 @@ body {
     margin: 10px;
     font-size: 30px;
 }
+.nowrap{
+  white-space: nowrap;
+}
+
+hr {
+  border-color: #808088;
+}
+
+.textbody{
+  margin-right: 15%;
+  margin-left: 15%;
+  font-size: 75%;
+}
+
+table, th, td{
+  padding: 15px;
+  color: #808088;
+}
 /*dsfasdf*/
