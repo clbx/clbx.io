@@ -1,11 +1,4 @@
-.keepmiddle {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-30%);
-    -webkit-transform: translateX(-50%) translateY(-30%);
-    transform: translateX(-50%) translateY(-30%);
-}
+
 @font-face {
     font-family: beef;
     src: url(new/beef.ttf);
