@@ -1,0 +1,86 @@
+body {
+
+  background-color: #121212;
+	color: #EEEEEE;
+	font-size: 14px;
+}
+
+.main_text{
+	position: fixed;
+	text-align: center;
+	left: 50%;
+	top: 20%;
+	transform: translateX(-50%);
+	font-family: "GohuFont", gohufont, serif;
+}
+
+.header_text{
+	position: fixed;
+	font-family: "GohuFont", gohufont, serif;
+}
+
+.unsupported{
+	position: fixed;
+	text-align: center;
+	left: 50%;
+	top: 5%;
+	transform: translateX(-50%);
+	font-family: "GohuFont", gohufont, serif;
+}
+
+
+.left_text{
+	position: fixed;
+	left: 3%;
+	top: 10%;
+	transform: translateX(-50%);
+	font-family: "GohuFont", gohufont, serif;
+}
+
+.right_text{
+	position: fixed;
+	left: 85%;
+	top: 10%;
+	transform: translateX(-50%);
+	font-family: "GohuFont", gohufont, serif;
+}
+
+@font-face{
+	font-family: "GohuFont";
+	src: url("../css/gohufont.ttf");
+}
+
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a:link {
+    color: #eeeeee;
+		text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #eeeeee;
+		text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #eeeeee;
+		text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #eeeeee;
+		text-decoration: none;
+}
