@@ -1,0 +1,18 @@
+---
+layout: default
+title: Mark Gross
+---
+<div style="display: flex">
+    <div class="blurb">
+            <h1>I'm Mark Gross</h1>
+            <p>I'm a high school student, hobby programmer, and gamer.</p>
+        </div>
+        <div class="posts-column">
+            <h1>Posts</h1>
+            <ul class="posts">
+                {% for post in site.posts %}
+                <li><span>{{ post.date | date: "%B %-d, %Y" }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+</div>
