@@ -1,72 +1,80 @@
-html {
-    font-family: "Roboto Light", "Helvetica", sans-serif;
-}
-
-a {
-    color: #76aebd;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #466770;
-}
-
-.container {
-    margin: auto;
-    color: #f0f0f0;
-    max-width: 70vw;
-    align-self: center;
-}
-
-.posts-column {
-    margin-left: 20vw;
-}
-
-.posts ul, .posts li {
-    list-style-type: none;
-    list-style-position: outside;
-    margin-left: -40px;
-}
-
 body {
-    background-color: #162124;
-    margin: 0;    
+    background-color: #121212;
+		color: #EEEEEE;
+
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    max-height: 48px;
-    overflow: hidden;
-    background-color: #2c6587;
+.main_text{
+	position: fixed;
+	text-align: center;
+	left: 50%;
+	top: 20%;
+	transform: translateX(-50%);
+	font-family: "GohuFont", gohufont, serif;
 }
 
-nav li {
+.unsupported{
+	position: fixed;
+	text-align: center;
+	left: 50%;
+	top: 5%;
+	transform: translateX(-50%);
+	font-family: "GohuFont", gohufont, serif;
+}
+
+
+.left_text{
+	position: fixed;
+	left: 33%;
+	top: 35%;
+	transform: translateX(-50%);
+	font-family: "GohuFont", gohufont, serif;
+}
+
+.right_text{
+	position: fixed;
+	left: 66%;
+	top: 35%;
+	transform: translateX(-50%);
+	font-family: "GohuFont", gohufont, serif;
+}
+
+@font-face{
+	font-family: "GohuFont";
+	src: url("../css/gohufont.ttf");
+}
+
+
+.column {
     float: left;
-    font-size: 20px;
-    vertical-align: middle;
-    border-right: 1px solid #f0f0f0;
+    width: 33.33%;
 }
 
-#name {
-    font-size: 28px;
-    margin-top: -5px;
-    color: #162124;
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-nav li a {
-    display: block;
-    padding: 11.5px 15px;
-    text-align: center;    
-    text-decoration: none;
-    color: #f0f0f0;
+a:link {
+    color: #eeeeee;
+		text-decoration: none;
 }
 
-nav li a:visited {
-    color: #f0f0f0;
+/* visited link */
+a:visited {
+    color: #eeeeee;
+		text-decoration: none;
 }
 
-nav li a:hover {
-    background-color: #264354;
+/* mouse over link */
+a:hover {
+    color: #eeeeee;
+		text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #eeeeee;
+		text-decoration: none;
 }

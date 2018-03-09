@@ -1,18 +1,35 @@
 ---
 layout: default
-title: Mark Gross
+title: clbx - Home
 ---
-<div style="display: flex">
-    <div class="blurb">
-            <h1>I'm Mark Gross</h1>
-            <p>I'm a high school student, hobby programmer, and gamer.</p>
-        </div>
-        <div class="posts-column">
-            <h1>Posts</h1>
-            <ul class="posts">
-                {% for post in site.posts %}
-                <li><span>{{ post.date | date: "%B %-d, %Y" }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-                {% endfor %}
-            </ul>
-        </div>
+
+<!--[if !IE]>
+<div class="unsupported">
+	It looks like you're using IE. Stop.
+</div>
+<![endif]-->
+
+
+<div class="row">
+	<div class="column">
+		<div class="left_text">
+			resume<br><br>
+			github<br><br>
+			mail<br><br>
+			linkedin<br><br>
+		</div>
+	</div>
+	<div class="column">
+		<div class="main_text">
+			hi, im clay<br>
+			<img src="X.png" alt = "x.png" height="400" width = "400">
+		</div>
+	</div>
+	<div class="column">
+		<div class="right_text">
+			<a href="posts.html">blog</a><br><br>
+			whois
+		</div>
+	</div>
+
 </div>

@@ -1,13 +1,14 @@
-.container {
-    margin: auto;
-    max-width: 70vw;
-    text-align: left;
+.body {
+    background-color: #121212;
+		color: #EEEEEE;
+
 }
 
-h1 {
-    font-size: 40px;
-}
-
-.meta {
-    margin-top: -20px;
+.main_text{
+	position: fixed;
+	text-align: center;
+	left: 50%;
+	top: 20%;
+	transform: translateX(-50%);
+	font-family: "GohuFont", gohufont, serif;
 }
