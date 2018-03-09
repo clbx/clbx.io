@@ -1,13 +1,20 @@
 ---
-layout: default
+layout: post
 title: clbx - posts
 ---
 
 
 <div class="row">
+	<div class="header">
+		<u>Sometimes interesting, usually not.</u><br><br>
+	</s
+
 	<div class="main_text">
 	{% for post in site.posts %}
-                <li><span>{{ post.date | date: "%B %-d, %Y" }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+    <li><span>{{ post.date | date: "%B %-d, %Y" }}</span> » <a href="{{ post.url }}" title="{{ post.title }}" style="color: #8A6554;">{{ post.title }}</a>
+				<p>{{post.excerpt}}</p>
+				<p> <a href="{{ post.url }}" title="{{ post.title }}" style="color: #8A6554;"><u>More -></u> </a></p>
+		</li>
 	{% endfor %}
 	</div>
 </div>
