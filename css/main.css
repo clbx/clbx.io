@@ -26,16 +26,16 @@ body {
 
 .left_text{
 	position: fixed;
-	left: 33%;
-	top: 35%;
+	left: 30%;
+	top: 27%;
 	transform: translateX(-50%);
 	font-family: "GohuFont", gohufont, serif;
 }
 
 .right_text{
 	position: fixed;
-	left: 66%;
-	top: 35%;
+	left: 70%;
+	top: 30%;
 	transform: translateX(-50%);
 	font-family: "GohuFont", gohufont, serif;
 }
