@@ -6,7 +6,7 @@ body {
 }
 
 .main_text{
-	position: fixed;
+	position: absolute;
 	text-align: center;
 	left: 50%;
 	top: 20%;
@@ -30,7 +30,7 @@ body {
 
 
 .left_text{
-	position: fixed;
+	position: absolute;
 	left: 3%;
 	top: 10%;
 	transform: translateX(-50%);
@@ -38,7 +38,7 @@ body {
 }
 
 .right_text{
-	position: fixed;
+	position: absolute;
 	left: 85%;
 	top: 10%;
 	transform: translateX(-50%);
@@ -49,6 +49,46 @@ body {
 	font-family: "GohuFont";
 	src: url("../css/gohufont.ttf");
 }
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #121212;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 
 
 .column {
