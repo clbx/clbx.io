@@ -9,7 +9,7 @@ body {
 	position: absolute;
 	text-align: center;
 	left: 50%;
-	top: 20%;
+	top: 10%;
 	transform: translateX(-50%);
 	font-family: "GohuFont", gohufont, serif;
 }
@@ -48,34 +48,6 @@ body {
 @font-face{
 	font-family: "GohuFont";
 	src: url("../css/gohufont.ttf");
-}
-
-.container {
-  position: relative;
-  width: 50%;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #121212;
-}
-
-.container:hover .overlay {
-  opacity: 1;
 }
 
 .text {
