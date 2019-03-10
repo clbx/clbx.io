@@ -26,9 +26,10 @@ var helpPage=[
   '     about  .............. how this website was made',
   '     clear  .............. clear the terminal',
   '     debug  .............. toggles debug mode',
+  '     neofetch  ........... the neofetch readout of my current machine',
 	'     login <username> .... sample login (test for raw mode)',
-	'     exit  ................ close the terminal (same as <ESC>)',
-	'     help  ................ show this help page',
+	'     exit  ............... close the terminal (same as <ESC>)',
+	'     help  ............... show this help page',
 	' ',
 	'  other input will be echoed to the terminal as a list of parsed arguments',
 	'  in the format <argument index> <quoting level> "<parsed value>".',
@@ -41,6 +42,28 @@ var about=[
   'https://www.masswerk.at/termlib/',
   ''
 ]
+
+var neofetch=[
+'                    c.           clbx@AppleJuice', 
+'                 ,xNMM.          ---------------',
+'               .OMMMMo           OS: macOS Mojave 10.14 18A391 x86_64',
+'               OMMM0,            Host: iMac17,1',
+'     .;loddo:\' loolloddol;.     Kernel: 18.0.0',
+'   cKMMMMMMMMMMNWMMMMMMMMMM0:    Uptime: 5 hours, 22 mins', 
+' .KMMMMMMMMMMMMMMMMMMMMMMMWd.    Packages: 42 (brew)',
+' XMMMMMMMMMMMMMMMMMMMMMMMX.      Shell: bash 3.2.57',
+';MMMMMMMMMMMMMMMMMMMMMMMM:       Resolution: 2560x1080', 
+':MMMMMMMMMMMMMMMMMMMMMMMM:       DE: Aqua', 
+'.MMMMMMMMMMMMMMMMMMMMMMMMX.      WM: Spectacle', 
+' kMMMMMMMMMMMMMMMMMMMMMMMMWd.    Terminal: Apple_Terminal', 
+' .XMMMMMMMMMMMMMMMMMMMMMMMMMMk   Terminal Font: SFMono-Regular', 
+'   .XMMMMMMMMMMMMMMMMMMMMMMMMK.   CPU: Intel i5-6500 (4) @ 3.20GHz', 
+'     kMMMMMMMMMMMMMMMMMMMMMMd     GPU: Radeon RX 580', 
+'      ;KMMMMMMMWXXWMMMMMMMk.      Memory: 2218MiB / 16384MiB', 
+'        .cooc,.    .,coo:.'
+]
+
+
 
 function termOpen() {
 	if (!term || term.losed) {
