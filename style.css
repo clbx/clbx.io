@@ -1,168 +1,99 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  background: #f0ead6;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
+
+/* essential terminal styles */
+
+.term {
+	font-family: courier,fixed,swiss,sans-serif;
+	font-size: 12px;
+	color: #33d011;
+	background: none;
+}
+.termReverse {
+	color: #111111;
+	background: #33d011;
 }
 
-.topbar {
-  width: 100%;
-  height: 38px;
-  position: absolute;
-  top: 0;
-  padding-top: 10px;
-  padding-left: 25px;
+/* other page styles */
+
+body,p,a,td {
+	font-family: courier,fixed,swiss,sans-serif;
+	font-size: 12px;
+	color: #cccccc;
+}
+.lh15 {
+	line-height: 15px;
+}
+a,a:link,a:visited {
+	text-decoration: none;
+	color: #77dd11;
+}
+a:hover {
+	text-decoration: underline;
+	color: #77dd11;
+}
+a:active {
+	text-decoration: underline;
+	color: #dddddd;
 }
 
-
-.title-page {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-
+a.termopen,a.termopen:link,a.termopen:visited {
+	text-decoration: none;
+	color: #77dd11;
+	background: none;
+}
+a.termopen:hover {
+	text-decoration: none;
+	color: #222222;
+	background: #77dd11;
+}
+a.termopen:active {
+	text-decoration: none;
+	color: #222222;
+	background: #dddddd;
 }
 
-.title-page h1 {
-  font-size: 30vh;
-  font-weight: 700;
-  position: relative;
-  margin: -8vh 0 0;
-  padding: 0;
+table.inventory td {
+	padding-bottom: 20px !important;
 }
 
-.title-page h1::after{
-  content: attr(data-h1);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  color: transparent;
-  background: rgb(92,16,222);
-  background: rgb(123,67,151);
-  background: linear-gradient(131deg, rgba(123,67,151,1) 0%, rgba(220,36,48,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 400%;
-  animation: animateTextBg 5s ease-in-out infinite;
+pre,tt {
+	font-family: courier,fixed,monospace;
+	color: #ccffaa;
+	font-size: 12px;
+	line-height: 15px;
+}
+.pale { color: #cceebb !important; }
 
+li {
+	line-height: 15px;
+	margin-bottom: 8px !important;
 }
 
-.title-page h1 + p {
-  color: #dbcfa6;
-  font-size: 3vh;
-  font-weight: 700;
-  max-width: 600px;
-  position: relative;
+.dimmed,.dimmed *,.dimmed * * {
+	background-color: #222222 !important;
+	color: #333333 !important;
 }
 
-.title-page h1 + p::after{
-  content: attr(data-p);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  color: transparent;
-  /*text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);*/
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-
-}
-
-@keyframes animateTextBg {
-  0% {
-    background-position: 0 0;
-  }
-  25%{
-    background-position: 100% 0;
-  }
-
-  50%{
-    background-position: 100% 100%;
-  }
-
-  75%{
-    background-position: 0 100;
-  }
-
-  100%{
-    background-position: 0 0;
-  }
-
-}
-
-
-
-#switch{
-  visibility: hidden;
-  position: absolute;
-}
-
-.switch-label{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 20px;
-  border: 1px solid #ccc;
-  border-radius: 50px;
-  position: relative;
-  cursor: pointer;
-  transition: 0.5s all ease;
-}
-
-.switch-label .toggle{
-  width: 15px;
-  height: 15px;
-  border-radius: 25px;
-  background-color: #eb008c;
-  position: absolute;
-  left: 3px;
-  transition: .5s all ease;
-
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 200px;
-  transition: 1s all ease;
-  width: 100%;
-  height: 100vh;
-}
-
-#switch:checked ~ .switch-label {
-  background: #eb008c;
-  border: none;
-  transition: .5s all ease;
-}
-
-#switch:checked ~ .switch-label .toggle{
-
-  border-radius: 25px 25px 25px 25px;
-  background: #fff;
-  transform: scale(0.9) translate(50px) rotate(90deg);
-  transition: .7s all ease;
-}
-
-.dark{
-  background: #414347;
-  transition: 1s all ease;
-}
-
-.darksub {
-  color: #777b84;
-  transition: 1s all ease;
-
-a {
-  color: inherit;
+@media print {
+	body { background-color: #ffffff; }
+	body,p,a,td,li,tt {
+		color: #000000;
+	}
+	pre,.prop,.pale {
+		color: #000000;
+	}
+	h1 {
+		color: #000000;
+	}
+	a,a:link,a:visited {
+		color: #000000;
+	}
+	a:hover {
+		color: #000000;
+	}
+	a:active {
+		color: #000000;
+	}
+	table.inventory {
+		display: none;
+	}
 }
