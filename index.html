@@ -3,7 +3,8 @@
 	<title>home - clbx.io</title>
 	<script language="JavaScript" type="text/javascript" src="termlib.js"></script>
   <script language="JavaScript" type="text/javascript" src="termlib_parser.js"></script>
-  <script language="JavaScript" type="text/javascript" src="commands.js"></script>
+	<script language="JavaScript" type="text/javascript" src="commands.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
 
 <script language="JavaScript" type="text/javascript">
@@ -26,7 +27,6 @@ var helpPage=[
   '     about  .............. how this website was made',
   '     clear  .............. clear the terminal',
   '     debug  .............. toggles debug mode',
-  '     neofetch  ........... the neofetch readout of my current machine',
 	'     login <username> .... sample login (test for raw mode)',
 	'     exit  ............... close the terminal (same as <ESC>)',
 	'     help  ............... show this help page',
@@ -43,25 +43,6 @@ var about=[
   ''
 ]
 
-var neofetch=[
-'                    c.           clbx@AppleJuice', 
-'                 ,xNMM.          ---------------',
-'               .OMMMMo           OS: macOS Mojave 10.14 18A391 x86_64',
-'               OMMM0,            Host: iMac17,1',
-'     .;loddo:\' loolloddol;.     Kernel: 18.0.0',
-'   cKMMMMMMMMMMNWMMMMMMMMMM0:    Uptime: 5 hours, 22 mins', 
-' .KMMMMMMMMMMMMMMMMMMMMMMMWd.    Packages: 42 (brew)',
-' XMMMMMMMMMMMMMMMMMMMMMMMX.      Shell: bash 3.2.57',
-';MMMMMMMMMMMMMMMMMMMMMMMM:       Resolution: 2560x1080', 
-':MMMMMMMMMMMMMMMMMMMMMMMM:       DE: Aqua', 
-'.MMMMMMMMMMMMMMMMMMMMMMMMX.      WM: Spectacle', 
-' kMMMMMMMMMMMMMMMMMMMMMMMMWd.    Terminal: Apple_Terminal', 
-' .XMMMMMMMMMMMMMMMMMMMMMMMMMMk   Terminal Font: SFMono-Regular', 
-'   .XMMMMMMMMMMMMMMMMMMMMMMMMK.   CPU: Intel i5-6500 (4) @ 3.20GHz', 
-'     kMMMMMMMMMMMMMMMMMMMMMMd     GPU: Radeon RX 580', 
-'      ;KMMMMMMMWXXWMMMMMMMk.      Memory: 2218MiB / 16384MiB', 
-'        .cooc,.    .,coo:.'
-]
 
 
 
@@ -296,6 +277,7 @@ function commandHandler() {
 	}
 	this.prompt();
 }
+
 
 
 </script>
