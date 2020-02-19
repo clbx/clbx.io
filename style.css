@@ -1,0 +1,41 @@
+.box {
+	margin: auto;
+	width: 75%;
+	border: 3px solid #eeeeee;
+	padding: 100px;
+	font-family: 'Space Mono', monospace;
+}
+.top {
+	margin: auto;
+	width: 75%;
+	border: 3px solid #eeeeee;
+	padding: 2px 100px 2px 100px;
+	font-family: 'Space Mono', monospace;
+}
+
+body {
+	background-color: #212121;
+	color: #eeeeee;
+}
+
+.alignleft{
+	text-align: left;
+}
+
+.alignright{
+	text-align: right;
+}
+
+.aligncetner{
+	text-align: center;
+}
+
+#headbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.entry {
+    padding-left: 2em;
+    text-indent: -2em;
+}
