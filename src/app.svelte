@@ -1,22 +1,26 @@
 <script>
-	let visible = false;
+	import { onMount } from 'svelte';
+    
+    let ready = false;
 
+    onMount(() => ready = true);
+
+    let visible = false;
 	function makeid(length) {
     var result = '';
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     var charactersLength = characters.length;
     for ( var i = 0; i < length; i++ ) {
       result += characters.charAt(Math.floor(Math.random() * charactersLength));
-   }
-   return result;
-}
+    }
+    return result;
+    }
 	
 	function typewriter(node, { speed = 50 }) {
 		const valid = (
 			node.childNodes.length === 1 &&
 			node.childNodes[0].nodeType === Node.TEXT_NODE
 		);
-
 		if (!valid) {
 			throw new Error(`This transition only works on elements with a single text node child`);
 		}
@@ -43,28 +47,16 @@
 	}
 </script>
 
+
 <label>
 	<input type="checkbox" bind:checked={visible}>
 	visible
 </label>
 
-{#if visible}
-	<p in:typewriter>
-		The quick brown fox jumps over the lazy dog
-	</p>
-<p in:typewriter>
-		The quick brown fox jumps over the lazy dog
-	</p>
-<p in:typewriter>
-		The quick brown fox jumps over the lazy dog
-	</p>
-<p in:typewriter>
-		The quick brown fox jumps over the lazy dog
-	</p>
-<p in:typewriter>
-		The quick brown fox jumps over the lazy dog
-	</p>
-
-
-{/if}
-
+<div class="always-visible">
+    {#if ready}
+        <p in:typewriter>
+            The quick brown fox jumps over the lazy dog
+        </p>
+    {/if}
+</div>
