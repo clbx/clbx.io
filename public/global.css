@@ -1,3 +1,11 @@
+:root {
+	--dark:#01084f;
+	--med-dark:#391954;
+	--med:#631e50;
+	--med-light:#a73c5a;
+	--light:#ff7954;
+}
+
 html, body {
 	position: relative;
 	width: 100%;

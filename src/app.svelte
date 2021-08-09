@@ -3,12 +3,16 @@
     
     let ready = false;
 
+	let y;
+
+	
+
     onMount(() => ready = true);
 
     let visible = false;
 	function makeid(length) {
     var result = '';
-    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var characters = '!@#$%^&*()_+-=[]{}:;",./?\\qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890';
     var charactersLength = characters.length;
     for ( var i = 0; i < length; i++ ) {
       result += characters.charAt(Math.floor(Math.random() * charactersLength));
@@ -47,16 +51,25 @@
 	}
 </script>
 
-
-<label>
-	<input type="checkbox" bind:checked={visible}>
-	visible
-</label>
+<svelte:window bind:scrollY={y}/>
 
 <div class="always-visible">
-    {#if ready}
-        <p in:typewriter>
-            The quick brown fox jumps over the lazy dog
-        </p>
-    {/if}
+
+
+	<div class="intro-text" style="opacity: {1-Math.max(0,y/40)}">
+		{#if ready}
+			<p in:typewriter>
+				Hi, I'm Clay
+			</p>
+		{/if}
+	</div>
+
+
+
+
+
+
+
+
+
 </div>
