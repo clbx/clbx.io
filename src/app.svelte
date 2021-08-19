@@ -56,7 +56,7 @@
 <div class="always-visible">
 
 
-	<div class="intro-text" style="opacity: {1-Math.max(0,y/40)}">
+	<div class="intro-text title" style="opacity: {1-Math.max(0,y/40)}">
 		{#if ready}
 			<p in:typewriter>
 				Hi, I'm Clay
