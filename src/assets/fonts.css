@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('@/assets/fonts/leaguespartan/static/WOFF/LeagueSpartan-Regular.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Patriot';
+    src: url('@/assets/fonts/Patriot-v1.0/Fonts/Patriot-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vercetti';
+    src: url('@/assets/fonts/Vercetti/OpenTypeWOFFs/Vercetti-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
