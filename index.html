@@ -1,13 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>clbx.io</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clbx.io</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #FAF7F2;
+      color: #2D2D2D;
+      font-family: 'JetBrains Mono', monospace;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 20%;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 2rem;
+      }
+    }
+
+    .container {
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: flex-start;
+      list-style: none;
+    }
+
+    .links a {
+      color: #2D2D2D;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 300;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom-color 0.2s;
+    }
+
+    .links a:hover {
+      border-bottom-color: #2D2D2D;
+    }
+  </style>
 </head>
-
-clay
-<br>
-<li><a href="https://github.com/clbx">github</a></li>
-<li><a href="mailto:clay@clbx.io">email</a></li>
-
+<body>
+  <div class="container">
+    <h1>Hi I'm Clay</h1>
+    <ul class="links">
+      <li><a href="https://github.com/clbx">github</a></li>
+      <li><a href="https://www.linkedin.com/in/clbx0/">linkedin</a></li>
+      <li><a href="mailto:clay@clbx.io">email</a></li>
+      <li><a href="/consulting">consulting</a></li>
+      <li><a href="/Resume_Buxton.pdf">hire me?</a></li>
+    </ul>
+  </div>
 </body>
 </html>
